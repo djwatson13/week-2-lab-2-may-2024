@@ -5,37 +5,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Modern Music</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <style>
+    h2 {
+      color:bisque;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+      font-style: italic;
+    }
+    
+    img {
+      border: solid 10px silver;
+      justify-content: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding:2%;
+    }
+
+    .white-centered {
+      text-align: center;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
+  <h1>Favorite Modern Bands</h1>
+  <nav class="flex-container-nav">
     <a href="index.html">HOME</a>
     <a href="gallery.html">GALLERY</a>
     <a href="about.html">ABOUT</a>
   </nav>
   
-  <h1>Favorite Modern Bands</h1>
-  <img 
-  width="500px"
-  height="500px"
-  alt="a picture of sheet music"
-  src="https://images.pexels.com/photos/210804/pexels-photo-210804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+  
   
   <main>
     <h2>My current favorite musicians.</h2>
-    <p>This website and its pages will be used to talk about current living musicians and bands I really enjoy, and I hope you do too if you look into them.</p>
+    <p style="text-align:center">This website and its pages will be used to talk about current living musicians and bands I really enjoy, and I hope you do too if you look into them.</p>
+    <img  
+    width="60%"
+    height="80%"
+    alt="a picture of sheet music"
+    src="https://images.pexels.com/photos/210804/pexels-photo-210804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
   </main>
-  
-
-<footer>Created at CodeX</footer>
-
-
-
-
-
-  
-  <script src="script.js"></script>
+  <div class="white-centered">
+    <script>document.write (15 * 36)</script>
+  </div>
+  <footer>Created at CodeX</footer>
 </body>
 
 </html>

@@ -6,39 +6,64 @@
   <meta name="viewport" content="width=device-width">
   <title>Gallery</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .hero-image {
+        height: 75vh;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .image-1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa03f3aa1-3647-48b5-b7dd-3ab1b776db32_984x984.jpeg");
+    }
+
+    .image-2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://yt3.googleusercontent.com/ytc/AIdro_k5TVciiSELe2xtaAtZucDGnJK3F_S2rHuzSTH3E5qP7Yo=s900-c-k-c0x00ffffff-no-rj");
+    }
+
+    .image-3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i1.wp.com/www.passionweiss.com/wp-content/uploads/2018/09/louis-cole.jpg?resize=800%2C800&ssl=1");
+    }
+  </style>
 </head>
 <body> 
-    <nav>
+    <h1>Gallery</h1>
+    <nav class="flex-container-nav">
         <a href="index.html">HOME</a>
         <a href="gallery.html">GALLERY</a>
         <a href="about.html">ABOUT</a>
       </nav>
-    <h1>Gallery</h1>
     <main>
-        <article>
-            <img alt="Incubus' cover for the album Make Yourself"
-            src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa03f3aa1-3647-48b5-b7dd-3ab1b776db32_984x984.jpeg"
-            width="250px"
-            height="250px">   
-            <p>Incubus</p>
-        </article>
-        <article>
-            <img alt="Independent Musician Pleasantries' Youtube icon"
-            src="https://yt3.googleusercontent.com/ytc/AIdro_k5TVciiSELe2xtaAtZucDGnJK3F_S2rHuzSTH3E5qP7Yo=s900-c-k-c0x00ffffff-no-rj"
-            width="250px"
-            height="250px">  
-            <p>Pleasantries</p>  
-        </article>   
-        <article>
-            <img alt="Louis Cole"
-            src="https://i1.wp.com/www.passionweiss.com/wp-content/uploads/2018/09/louis-cole.jpg?resize=800%2C800&ssl=1"
-            width="250px"
-            height="250px">   
-            <p>Louis Cole</p>
-        </article>
-    </main>
-<footer>Created at CodeX</footer>
-
+        <div class="flex-container">
+            <div class="hero-image image-1">
+                <div class="hero-text">
+                    <p style="font-size:2em">Incubus</p>
+                </div> 
+            </div>
+            <div class="hero-image image-2">
+                <div class="hero-text">
+                    <p style="font-size:2em">Pleasantries</p>
+                </div> 
+            </div>
+            <div class="hero-image image-3">
+                <div class="hero-text">
+                    <p style="font-size:2em">Louis Cole</p>
+                </div> 
+            </div>
+            </div>
+        </main>
+        <footer>Created at CodeX</footer>
 </body>
 
 </html>
